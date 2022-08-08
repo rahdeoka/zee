@@ -1,0 +1,121 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+}
+.fCountainer{
+    width: 100%;
+    height: 200vh;
+    background-color:  rgb(22, 22, 22);
+}
+
+/* navbar */
+
+nav{
+    height: 30px;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    border-bottom: 5px solid rgb(77, 77, 77);
+}
+
+/* logo */
+
+.logo{
+    color: aliceblue;
+    font-family: "monea alegante", sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    text-transform: capitalize;
+}
+
+.firstname{
+    color: rgb(51, 190, 255);
+}
+
+/* fitur */
+
+.fitur{
+    display: flex;
+    align-items: center;
+}
+
+.fitur ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fitur ul li{
+    margin: 10px;
+}
+
+.fitur li{
+    list-style-type: none;
+}
+
+.fitur a{
+    color: aliceblue;
+    font-size: 15px;
+    font-family: "roboto", sans-serif;
+    text-decoration: none;
+}
+
+.fitur a:hover{
+    color: rgb(51, 190, 255);
+
+    
+}
+
+/* button */
+
+.fitur button{
+    width: 75px;
+    height: 27px;
+    background-color: rgb(51, 190, 255) ;
+    border: 2px solid rgb(51, 190, 255) ;
+    border-radius: 20px;
+}
+
+
+.fitur button a{
+    color: aliceblue;
+    font-family: "roboto", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* section */
+
+section{
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(255, 150, 237),rgb(147, 221, 255));   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside{
+    width: 90%;
+    height: 90%;
+    background-color: rgb(22, 22, 22,.9);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside li{
+    list-style-type: none;
+    margin: 30px;
+}
+
+.aside li input{
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid rgb(51, 190, 255);
+}
