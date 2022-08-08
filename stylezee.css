@@ -11,7 +11,7 @@
 /* navbar */
 
 nav{
-    height: 30px;
+    height: 40px;
     background-color: rgb(22, 22, 22);
     display: flex;
     justify-content: space-between;
@@ -35,62 +35,222 @@ nav{
     color: rgb(51, 190, 255);
 }
 
+.last{
+    color: rgb(51, 190, 255);
+}
+
 /* fitur */
 
 .fitur{
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 36px;
+    background: linear-gradient(to right, rgb(51, 190, 255),rgb(176, 0, 211));
+    border-radius: 15px;
+    
 }
 
 .fitur ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.fitur ul li{
-    margin: 10px;
-}
+}  
 
 .fitur li{
     list-style-type: none;
+    padding: 9px 53px 9px 53px;
 }
 
 .fitur a{
     color: aliceblue;
-    font-size: 15px;
+    font-size: 16px;
     font-family: "roboto", sans-serif;
     text-decoration: none;
+    position: relative;
+    font-weight: bold;
+} 
+
+.fitur li:hover{
+    padding: 9px 53px 9px 53px;
+    background-color: rgb(22, 22, 22);
+    border-radius: 16px;
+    transition: 0.6s;
 }
 
 .fitur a:hover{
     color: rgb(51, 190, 255);
+    transition: 0.6s;
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+}
 
-    
+/* search */
+
+/* .rightnav input{
+    width: 60px;
+} */
+
+/* rightnav */
+
+.rightnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* mode */
+
+.mode img{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    align-items: center;
+}
+
+
+.mode img:active{
+    /* background-image: url(/lightmoodd.png); */
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
 }
 
 /* button */
 
-.fitur button{
-    width: 75px;
-    height: 27px;
-    background-color: rgb(51, 190, 255) ;
+.button button{
+    width: 100px;
+    height: 36px;
+    background-color: rgb(51, 190, 255,.0) ;
     border: 2px solid rgb(51, 190, 255) ;
-    border-radius: 20px;
+    border-radius: 15px;
+}
+
+.button button:hover{
+    background: rgb(51, 190, 255) ;
+    transition: 0.4s;
 }
 
 
-.fitur button a{
+.button button a{
     color: aliceblue;
     font-family: "roboto", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
+    text-decoration: none;
 }
 
-/* section */
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(51, 190, 255),rgb(176, 0, 211));
+}
 
-section{
+.beranda{
+    width: 90%;
+    height: 75%;
+    background-color: rgb(22, 22, 22);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/*  */
+
+
+.sayhello{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    padding: 10px 2%;
+}
+
+.foto{
+    display: flex;
+    width: 290px;
+    height: 340px;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(to right, rgb(51, 190, 255),rgb(176, 0, 211));
+}
+
+.foto img{
+    background-size: cover;
+    width: 430px;
+    height: 300px;
+    margin-left: -60px;
+}
+
+.beranda h1{
+    color:  rgb(51, 190, 255);
+    font-family: "roboto", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.beranda p{
+    color: aliceblue;
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.kata{
+    width: 550px;
+}
+
+.ig{
+    box-sizing: border-box;
+}
+.ig button{
+    width: 220px;
+    height: 40px;
+    background: linear-gradient(to right, rgb(51, 190, 255),rgb(176, 0, 211));
+    border-radius: 30px;
+    text-transform: uppercase;
+    border: 2px solid rgb(141, 219, 255);
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.ig button img{
+    background-size: cover;
+    width: 23px;
+    height: 23px;
+    margin: 20px;
+}
+
+.ig button a{
+    font-weight: 750;
+    color: rgb(255, 255, 255);
+    font-family: "roboto", sans-serif;
+    text-decoration: none;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+/* login */
+
+/* section{
     height: 400px;
     width: 100%;
     background: linear-gradient(to right, rgb(255, 150, 237),rgb(147, 221, 255));   
@@ -102,7 +262,7 @@ section{
 .aside{
     width: 90%;
     height: 90%;
-    background-color: rgb(22, 22, 22,.9);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 60px;
     display: flex;
     align-items: center;
@@ -118,4 +278,5 @@ section{
     border-radius: 10px;
     padding: 20px;
     border: 2px solid rgb(51, 190, 255);
-}
+} */
+
