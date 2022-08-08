@@ -1,2 +1,0 @@
-# zee
-tugassekolah
