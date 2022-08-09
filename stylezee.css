@@ -274,7 +274,6 @@ main{
 .profile ul li div a img{
     width: 150px;
     height: 150px;
-    background-color: black;
     background-size: cover;
     border-radius: 50%;
     display: flex;
