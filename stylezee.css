@@ -271,7 +271,7 @@ main{
     align-items: center;
 }
 
-.profile ul li div{
+.profile ul li div a img{
     width: 150px;
     height: 150px;
     background-color: black;
@@ -280,7 +280,7 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.profile ul li div:hover{
+.profile ul li div a img:hover{
     border: 7px solid rgb(255, 255, 255);
     transition: 0.3s;
     box-sizing: border-box;
